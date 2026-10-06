@@ -1,0 +1,301 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    height: 90px;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =====================================================
+   LOGO DO MENU
+===================================================== */
+
+.img01 {
+    width: 180px !important;
+    height: 200px !important;
+   position: absolute;
+    object-fit: contain;
+    display: flex;
+left: 100px;
+
+
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 10px !important;
+    margin: 0 2px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #315ee8 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #315ee8 !important;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   BOTÃO ORÇAMENTO
+===================================================== */
+
+.btn-orcamento-nav,
+.navbar .btn-primary {
+    background-color: #3d68ed;
+    border: none;
+    color: white;
+    border-radius: 8px;
+
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-left: 15px;
+
+    transition: 0.3s;
+}
+
+.btn-orcamento-nav:hover,
+.navbar .btn-primary:hover {
+    background-color: #294fc9;
+    color: white;
+}
+
+
+/* =====================================================
+   ESPAÇO PARA O MENU FIXO
+===================================================== */
+
+main {
+    padding-top: 90px;
+}
+
+
+/* =====================================================
+   PRIMEIRA SEÇÃO
+===================================================== */
+
+#inicio {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+
+/* =====================================================
+   LOGO PRINCIPAL
+===================================================== */
+
+.logo-principal {
+    width: 400px !important;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+h1 {
+    color: #172d5c;
+}
+
+h2 {
+    color: #172d5c;
+}
+
+
+*/
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+
+
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    background: linear-gradient(
+        135deg,
+        #08316d 0%,
+        #0b3966 50%,
+        #073a64 100%
+    ) !important;
+
+    color: white;
+}
+
+
+/* =====================================================
+   MENU MOBILE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .navbar {
+        height: auto;
+        min-height: 75px;
+    }
+
+    .navbar .container {
+        height: auto;
+        min-height: 75px;
+    }
+
+
+    /* Logo menor no celular */
+
+    .img01 {
+        width: 115px !important;
+        max-height: 55px;
+    }
+
+
+    /* Menu aberto */
+
+    .navbar-collapse {
+        background-color: white;
+
+        margin-top: 5px;
+        padding: 15px;
+
+        border-radius: 10px;
+
+        box-shadow:
+            0 5px 20px rgba(221, 67, 67, 0.1);
+    }
+
+
+    .navbar-nav {
+        align-items: stretch;
+        text-align: center;
+    }
+
+
+    .navbar-nav .nav-link {
+        padding: 12px !important;
+        font-size: 16px;
+    }
+
+
+    /* Botão */
+
+    .navbar .btn-primary {
+        display: block;
+        width: 100%;
+
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    main {
+        padding-top: 75px;
+    }
+
+
+    #inicio {
+        min-height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .logo-principal {
+        width: 280px !important;
+        max-width: 70%;
+    }
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .logo-tupi {
+        width: 100px !important;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo-principal {
+        width: 230px !important;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.inicio { 
+    min-height: 100vh; 
+ 
+    background: 
+        linear-gradient( 
+            0deg, 
+            rgba(37, 37, 37, 0.95) 0%, 
+            rgba(58, 58, 58, 0.75) 30%, 
+            rgba(255, 255, 255, 0.25) 65%, 
+            rgba(255, 255, 255, 0.05) 100% 
+        ), 
+        url("../img/02.png") center center / cover no-repeat; 
+ 
+    padding-top: 80px; 
+}
