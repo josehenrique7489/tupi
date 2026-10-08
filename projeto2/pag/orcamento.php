@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,129 +23,275 @@
 
     <style>
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-
-           
-    min-height: 100vh; 
- 
-    background: 
-        linear-gradient( 
-            0deg, 
-            rgba(37, 37, 37, 0.95) 0%, 
-            rgba(58, 58, 58, 0.75) 30%, 
-            rgba(255, 255, 255, 0.25) 65%, 
-            rgba(255, 255, 255, 0.05) 100% 
-        ), 
-        url("../img/04.png") center center / cover no-repeat; 
- 
-    padding-top: 80px; 
-
 
             min-height: 100vh;
 
-           background-image:url(../img/04.png) ;
+            margin: 0;
 
-            background-repeat: no-repeat;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
 
-            background-size: cover; 
+            background:
 
-            font-family: Arial, Helvetica, sans-serif;
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.78),
+                    rgba(255, 255, 255, 0.45),
+                    rgba(255, 255, 255, 0.25)
+                ),
+
+                url("../img/04.png")
+                center center /
+                cover
+                no-repeat
+                fixed;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
-            padding: 30px 15px;
+            padding: 40px 15px;
+
         }
+
+
+        /* ÁREA PRINCIPAL */
 
         .pagina {
+
             width: 100%;
+
             display: flex;
+
             justify-content: center;
+
         }
 
+
+        /* CARD */
+
         .card-orcamento {
+
             width: 100%;
+
             max-width: 650px;
 
-            background: #ffffff;
+            background:
+
+                rgba(255, 255, 255, 0.96);
+
+            backdrop-filter: blur(10px);
+
+            -webkit-backdrop-filter: blur(10px);
+
+            border-radius: 24px;
+
+            padding: 42px;
+
+            border: 1px solid
+                rgba(255, 255, 255, 0.8);
+
+            border-top:
+                5px solid #0d6efd;
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(0, 0, 0, 0.30);
+
+        }
+
+
+        /* ÍCONE PRINCIPAL */
+
+        .icone-principal {
+
+            width: 75px;
+
+            height: 75px;
+
+            margin: 0 auto 18px;
 
             border-radius: 20px;
 
-            padding: 40px;
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #0b3d91,
+                    #0d6efd
+                );
+
+            color: white;
+
+            font-size: 35px;
 
             box-shadow:
-                0 15px 40px rgba(13, 65, 120, 0.15);
 
-            border-top: 5px solid #0d6efd;
+                0 10px 25px
+                rgba(13, 110, 253, 0.30);
+
         }
+
+
+        /* TÍTULO */
 
         .logo {
+
             color: #0b3d91;
 
-            font-size: 32px;
+            font-size: 30px;
+
             font-weight: 800;
 
-            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+
+            margin-bottom: 8px;
+
         }
 
+
         .subtitulo {
+
             color: #6c757d;
 
             font-size: 15px;
 
-            margin-bottom: 25px;
+            margin: 0;
+
         }
+
+
+        /* LINHA */
 
         hr {
+
             border: 0;
 
-            border-top: 1px solid #dbe7f5;
+            height: 1px;
 
-            margin: 25px 0 30px;
+            background:
+
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #d5e2f2,
+                    transparent
+                );
+
+            margin:
+                30px 0;
+
         }
+
+
+        /* LABEL */
 
         .form-label {
+
             color: #173b65;
 
-            font-weight: 600;
+            font-weight: 700;
+
+            font-size: 15px;
 
             margin-bottom: 8px;
+
         }
+
+
+        .icone {
+
+            color: #0d6efd;
+
+            margin-right: 5px;
+
+        }
+
+
+        /* INPUT */
 
         .form-control {
-            min-height: 48px;
-
-            border: 1px solid #cbd8e8;
-
-            border-radius: 10px;
-
-            padding: 10px 14px;
-
-            transition: 0.3s;
-        }
-
-        .form-control:focus {
-            border-color: #0d6efd;
-
-            box-shadow:
-                0 0 0 0.2rem rgba(13, 110, 253, 0.15);
-        }
-
-        .form-control::placeholder {
-            color: #9aa7b5;
-        }
-
-        .btn-orcamento {
-            width: 100%;
 
             min-height: 50px;
 
+            border:
+
+                1px solid #d4dfec;
+
+            border-radius: 12px;
+
+            padding:
+
+                11px 15px;
+
+            color: #173b65;
+
+            background: #ffffff;
+
+            transition:
+                all 0.25s ease;
+
+        }
+
+
+        .form-control:hover {
+
+            border-color: #9db9dc;
+
+        }
+
+
+        .form-control:focus {
+
+            border-color: #0d6efd;
+
+            background: #ffffff;
+
+            box-shadow:
+
+                0 0 0 4px
+                rgba(13, 110, 253, 0.12);
+
+        }
+
+
+        .form-control::placeholder {
+
+            color: #a1adba;
+
+        }
+
+
+        /* BOTÃO */
+
+        .btn-orcamento {
+
+            width: 100%;
+
+            min-height: 54px;
+
             border: none;
 
-            border-radius: 10px;
+            border-radius: 12px;
 
             background:
+
                 linear-gradient(
                     135deg,
                     #0b3d91,
@@ -153,76 +300,182 @@
 
             color: #ffffff;
 
-            font-size: 17px;
+            font-size: 16px;
 
             font-weight: 700;
 
-            transition: 0.3s;
+            letter-spacing: 0.2px;
+
+            transition:
+                all 0.25s ease;
 
             box-shadow:
-                0 6px 15px rgba(13, 110, 253, 0.25);
+
+                0 8px 20px
+                rgba(13, 110, 253, 0.25);
+
         }
+
 
         .btn-orcamento:hover {
-            transform: translateY(-2px);
+
+            transform:
+                translateY(-2px);
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #082f70,
+                    #0b5ed7
+                );
 
             box-shadow:
-                0 9px 20px rgba(13, 110, 253, 0.35);
+
+                0 12px 28px
+                rgba(13, 110, 253, 0.35);
 
             color: #ffffff;
+
         }
 
-        .voltar {
-            display: inline-flex;
 
-            align-items: center;
-            justify-content: center;
+        .btn-orcamento:active {
 
-            width: 45px;
-            height: 45px;
+            transform:
+                translateY(0);
+
+        }
+
+
+        /* BOTÃO VOLTAR */
+
+        .btn-voltar {
+
+            width: 46px;
+
+            height: 46px;
 
             margin-top: 25px;
 
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-decoration: none;
+
+            font-size: 21px;
+
             border-radius: 50%;
+
+            color: #0b3d91;
 
             background: #edf4ff;
 
-            transition: 0.3s;
+            border:
+                1px solid #d6e5f8;
+
+            transition:
+                all 0.25s ease;
+
         }
 
-        .voltar:hover {
-            background: #d7e7ff;
 
-            transform: translateX(-3px);
+        .btn-voltar:hover {
+
+            background: #0d6efd;
+
+            color: #ffffff;
+
+            transform:
+                translateX(-4px);
+
+            box-shadow:
+
+                0 6px 15px
+                rgba(13, 110, 253, 0.25);
+
         }
 
-        .voltar img {
-            width: 32px;
-            height: 32px;
 
-            object-fit: contain;
+        /* TEXTO INFORMATIVO */
+
+        .seguranca {
+
+            margin-top: 18px;
+
+            color: #8996a5;
+
+            font-size: 12px;
+
         }
 
-        .icone {
-            color: #0d6efd;
 
-            margin-right: 5px;
+        .seguranca i {
+
+            color: #198754;
+
+            margin-right: 4px;
+
         }
+
+
+        /* RESPONSIVO */
 
         @media (max-width: 576px) {
 
             body {
-                padding: 20px 12px;
+
+                padding:
+                    25px 12px;
+
             }
+
 
             .card-orcamento {
-                padding: 25px 20px;
 
-                border-radius: 16px;
+                padding:
+                    30px 20px;
+
+                border-radius:
+                    20px;
+
             }
 
+
+            .icone-principal {
+
+                width: 65px;
+
+                height: 65px;
+
+                font-size: 30px;
+
+                border-radius: 17px;
+
+            }
+
+
             .logo {
-                font-size: 27px;
+
+                font-size: 24px;
+
+            }
+
+
+            .subtitulo {
+
+                font-size: 14px;
+
+            }
+
+
+            .form-control {
+
+                min-height: 48px;
+
             }
 
         }
@@ -231,119 +484,151 @@
 
 </head>
 
+
 <body>
+
 
     <div class="pagina">
 
         <div class="card-orcamento">
 
-            <!-- Título -->
+
+            <!-- CABEÇALHO -->
+
             <div class="text-center">
 
-                <div class="mb-2">
+                <div class="icone-principal">
 
-                    <i class="bi bi-file-earmark-text-fill"
-                       style="font-size: 38px; color: #0d6efd;">
-                    </i>
+                    <i class="bi bi-file-earmark-text-fill"></i>
 
                 </div>
 
+
                 <h1 class="logo">
+
                     FAÇA SEU ORÇAMENTO
+
                 </h1>
 
+
                 <p class="subtitulo">
-                    Preencha seus dados e entraremos em contato.
+
+                    Preencha seus dados e nossa equipe
+                    entrará em contato.
+
                 </p>
 
             </div>
 
+
             <hr>
 
-            <!-- Formulário -->
-            <form action="orcamento1.php" method="POST">
 
-                <!-- Nome -->
+            <!-- FORMULÁRIO -->
+
+            <form
+                action="orcamento1.php"
+                method="POST">
+
+
+                <!-- NOME -->
+
                 <div class="mb-4">
 
                     <label class="form-label">
 
                         <i class="bi bi-person-fill icone"></i>
 
-                        Nome:
+                        Nome
+
                     </label>
+
 
                     <input
                         type="text"
                         name="nome"
                         class="form-control"
-                        placeholder="Digite seu nome"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
                         required>
 
                 </div>
 
 
-                <!-- Telefone -->
+                <!-- TELEFONE -->
+
                 <div class="mb-4">
 
                     <label class="form-label">
 
                         <i class="bi bi-telephone-fill icone"></i>
 
-                        Telefone:
+                        Telefone
+
                     </label>
+
 
                     <input
                         type="tel"
                         name="telefone"
                         class="form-control"
-                        placeholder="Digite seu telefone"
+                        placeholder="(00) 00000-0000"
+                        autocomplete="tel"
                         required>
 
                 </div>
 
 
-                <!-- WhatsApp -->
+                <!-- WHATSAPP -->
+
                 <div class="mb-4">
 
                     <label class="form-label">
 
                         <i class="bi bi-whatsapp icone"></i>
 
-                        WhatsApp:
+                        WhatsApp
+
                     </label>
+
 
                     <input
                         type="tel"
                         name="whatsapp"
                         class="form-control"
-                        placeholder="Digite seu WhatsApp"
+                        placeholder="(00) 00000-0000"
+                        autocomplete="tel"
                         required>
 
                 </div>
 
 
-                <!-- Email -->
+                <!-- E-MAIL -->
+
                 <div class="mb-4">
 
                     <label class="form-label">
 
                         <i class="bi bi-envelope-fill icone"></i>
 
-                        E-mail:
+                        E-mail
+
                     </label>
+
 
                     <input
                         type="email"
                         name="email"
                         class="form-control"
-                        placeholder="Digite seu e-mail"
+                        placeholder="Digite seu melhor e-mail"
+                        autocomplete="email"
                         required>
 
                 </div>
 
 
-                <!-- Botão -->
+                <!-- BOTÃO -->
+
                 <div class="mt-4">
 
                     <button
@@ -355,19 +640,40 @@
                         Solicitar Orçamento
 
                     </button>
-<br>
+
                 </div>
+
 
             </form>
 
 
-            <!-- Voltar -->
+            <!-- SEGURANÇA -->
+
+            <div class="text-center seguranca">
+
+                <i class="bi bi-shield-check"></i>
+
+                Seus dados serão utilizados apenas
+                para contato sobre o orçamento.
+
+            </div>
+
+
+            <!-- VOLTAR -->
+
             <div class="text-center">
 
-            <a href="../index.html" class="btn-voltar">
-    ⬅️
-</a>
+                <a
+                    href="../index.html"
+                    class="btn-voltar"
+                    title="Voltar">
+
+                    ⬅️
+
+                </a>
+
             </div>
+
 
         </div>
 
@@ -375,10 +681,13 @@
 
 
     <!-- Bootstrap JS -->
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
 
+
 </body>
 
 </html>
+```
