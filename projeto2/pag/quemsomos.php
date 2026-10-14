@@ -44,24 +44,20 @@
     <div class="container">
 
 
-        <a
-            class="navbar-brand"
-            href="index.html">
+    <a class="navbar-brand fw-bold fs-4" href="../index.html"
+               style="color: #203f70;">
+                <i class="bi bi-truck-front-fill me-2"></i>
+                TUPI <span class="text-dark">MUDANÇAS</span>
+            </a>
 
-            TUPI <span>MUDANÇAS</span>
-
-        </a>
-
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
         <div
@@ -100,7 +96,7 @@
 
                     <a
                         class="nav-link"
-                        href="#servicos">
+                        href="servicos.php">
 
                         Serviços
 
@@ -629,6 +625,7 @@
         </div>
 
     </div>
+
 
 </section>
 
