@@ -58,11 +58,20 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#diferenciais">Diferenciais</a>
+                        <a class="nav-link" href="diferencial.php">Diferenciais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="avaliacao.php">Avaliação</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Fale Conosco</a>
+                        <a class="nav-link"
+                           href="https://wa.me/5561996877021?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Tupi%20Mudanças."
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp me-1"></i>
+                            Fale Conosco
+                        </a>
                     </li>
 
                     <li class="nav-item ms-lg-2">

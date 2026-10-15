@@ -108,7 +108,7 @@
 
                     <a
                         class="nav-link"
-                        href="#servicos">
+                        href="diferencial.php">
 
                         Diferenciais
 
@@ -120,26 +120,32 @@
 
                     <a
                         class="nav-link"
-                        href="#servicos">
+                        href="avaliacao.php">
 
                        avaliações
 
                     </a>
-
                 </li>
+
+                
 
                 <li class="nav-item">
-
-                    <a
-                        class="nav-link"
-                        href="#servicos">
-
-                     Fale Conosco
-
-                    </a>
-
-                </li>
-
+                        <a class="nav-link"
+                           href="https://wa.me/5561996877021?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Tupi%20Mudanças."
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="./pag/orcamento.php"
+                           class="btn text-white rounded-pill px-4"
+                           style="background-color: #315b9b;">
+                            <i class="bi bi-calculator me-1"></i>
+                            Orçamento
+                        </a>
+                    </li>
             </ul>
 
         </div>
@@ -695,40 +701,25 @@
      FOOTER
 ========================= -->
 
-<footer>
+<footer class="text-white text-center py-4"
+            style="background: linear-gradient(110deg, #142846 0%, #203f70 55%, #315b9b 100%);">
 
-    <div class="container text-center">
+        <div class="container">
 
+            <a href="../index.html"
+               class="text-white text-decoration-none fw-bold fs-5">
+                <i class="bi bi-truck-front-fill me-2"></i>
+                TUPI MUDANÇAS
+            </a>
 
-        <div class="footer-logo">
+            <hr class="border-light opacity-25 my-3">
 
-            TUPI <span>MUDANÇAS</span>
+            <p class="mb-0 text-white-50">
+                © 2026 Tupi Mudanças. Todos os direitos reservados.
+            </p>
 
         </div>
-
-
-        <p class="footer-text">
-
-            Movendo histórias com cuidado e confiança.
-
-        </p>
-
-
-        <hr
-            class="border-secondary my-4">
-
-
-        <small class="text-secondary">
-
-            © 2026 Tupi Mudanças.
-            Todos os direitos reservados.
-
-        </small>
-
-
-    </div>
-
-</footer>
+    </footer>
 
 
 
